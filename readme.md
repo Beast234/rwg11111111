@@ -1,6 +1,6 @@
 # Build your first Bot in 90 min with Node.js, Botkit, & uTu.ai.
 
-This repository contains the source code for the [https://docs.google.com/presentation/d/1zCaN6QuQS-PTe932nApASa3wpnt1kIWqrnPWSZJb-3I/edit#slide=id.g19fcfbc1e2_0_58][cloud-slack-bot-codelab].
+This repository contains the source code for the [https://docs.google.com/presentation/d/1zCaN6QuQS-PTe932nApASa3wpnt1kIWqrnPWSZJb-3I/edit#slide=id.g19fcfbc1e2_0_58][https://docs.google.com/presentation/d/1zCaN6QuQS-PTe932nApASa3wpnt1kIWqrnPWSZJb-3I/edit#slide=id.g19fcfbc1e2_0_58].
 
 [![Build Status][travis-status-image]][travis-status]
 
