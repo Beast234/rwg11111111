@@ -12,5 +12,6 @@ import fetch from 'node-fetch';
  */
 export const getHoroscope = (sign, period = 'today') => (
   fetch(`http://horoscope-api.herokuapp.com/horoscope/${period}/${sign}`)
-    .then(res => res.json()) //maybe add .horoscope post .json()
+    .then(res => res.json())
+    .then((res) => res.horoscope)
 );
