@@ -3,6 +3,7 @@ import alexa from 'alexa-botkit';
 import localtunnel from 'localtunnel';
 import { uTu, constants } from 'utu';
 
+// tag utu constants to app environment
 const utu = new uTu(process.env.UTU_SECRET, {
   platform: constants.ALEXA,
   appId: process.env.ALEXA_APPID,
@@ -34,7 +35,12 @@ alexaEars.setupWebserver(3000, (err, webserver) => {
 });
 
 alexaEars.middleware.receive.use((bot, message, next) => {
-  console.log(bot, message);
+  message.utu = utu.withContext(
+    {
+      platformId: message.user,
+      sessionId: message.alexa.getSessionId(),
+    }
+  );
   next();
 });
 
