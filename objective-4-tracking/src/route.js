@@ -4,6 +4,7 @@ import localtunnel from 'localtunnel';
 import { uTu, constants } from 'utu';
 
 // tag utu constants to app environment
+console.log('apiKey: ', process.env.UTU_SECRET);
 const utu = new uTu(process.env.UTU_SECRET, {
   platform: constants.ALEXA,
   appId: process.env.ALEXA_APPID,

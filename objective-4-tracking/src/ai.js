@@ -12,7 +12,8 @@ alexaEar.on('message_received', (bot, message) => {
       },
       botMessage: false,
     }
-  });
+  }).then( (e) => console.log("error: ", e))
+    .catch( (e) => console.log("error: ", e));
 });
 
 alexaEar.hears(HOROSCOPE.intents.START, ['message_received'], (bot, message) => {
