@@ -1,3 +1,5 @@
+import getUtterances from 'alexa-utterances';
+
 const HOROSCOPE = {
   intents: {
     START: ['LaunchRequest', 'AMAZON.StartOverIntent'],
@@ -10,6 +12,10 @@ const HOROSCOPE = {
     'get {-|SIGN} horoscope for {-|PERIOD}',
     '{get| what is} {the|this|} {-|PERIOD} horoscope for {-|SIGN}',
   ],
+  slots: {
+    SIGN: 'SIGN',
+    PERIOD: 'PERIOD',
+  },
   slotTypes: {
     SIGN: [
       'aries', 'taurus', 'gemini', 'cancer', 'leo', 'virgo',
@@ -25,5 +31,8 @@ const HOROSCOPE = {
     goodbye: 'Goodbye!',
   }
 };
+
+const { utterances, slots, slotTypes } = HOROSCOPE
+console.log('utterances: ', getUtterances(utterances, slots, slotTypes));
 
 export default HOROSCOPE;
