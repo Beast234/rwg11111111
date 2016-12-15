@@ -21,6 +21,9 @@ Again, this workshop is intended to be a preliminary primer on the conversant sp
 - Objective 3: NLP.  Art meets science.  Craft utterances that help guide users.
 - Objective 4: Analytics.  See what is happening where and why for who.
 
+Additional details on setting up and running each objective contained in local
+readme's in each objective subfolder.
+
 ### Setup
 
 - [IDE](http://flight-manual.atom.io/getting-started/sections/installing-atom/) of your choosing (we use atom... mostly)
@@ -29,8 +32,6 @@ Again, this workshop is intended to be a preliminary primer on the conversant sp
 ### Contributing
 
 Contributions welcome!
-
-<contributing.md>.</contributing.md>
 
 ## License
 
