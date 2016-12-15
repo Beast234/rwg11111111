@@ -1,50 +1,37 @@
-# Build your first Bot in 90 min with Node.js, Botkit, & uTu.ai.
+# Build your first Bot in 90 min
+This workshop is intended to be an intro primer to the world of conversant as well as a hands on exploration into how modern day bots are constructed.  This workshop does not require past hands on coding, but as always experience does help.
 
-This repository contains the source code for the [hello](https://docs.google.com/presentation/d/1zCaN6QuQS-PTe932nApASa3wpnt1kIWqrnPWSZJb-3I/edit#slide=id.g19fcfbc1e2_0_58)
+The following presentation - [90min bot](https://docs.google.com/presentation/d/1zCaN6QuQS-PTe932nApASa3wpnt1kIWqrnPWSZJb-3I/edit#slide=id.g19fcfbc1e2_0_58) - at least introduces some of the core concepts, but try to attend a live session for the meat of the detail.
 
-[![Build Status][travis-status-image]][travis-status]
+### Technologies Used
 
-## Resources
+The following technologies are used:
 
-### Codelabs and Samples
+- [JavaScript](http://www.w3schools.com/js/)
+- [BotKit](https://github.com/howdyai/botkit)
+- [uTu.ai](https://github.com/utu-ai/utu-javascript-sdk)
+- [Alexa](https://developer.amazon.com/edw/home.html#/skills/list)
 
-Each stage folder in this repo represents a self contained Bot representing an ever increasing amount of capability and sophistication.
+### Objectives
 
-- [Google codelabs][codelabs]
-- [Slack integrations on Google Cloud Platform samples][slack-samples]
-- [Node.js on Google Cloud Platform samples][nodejs-samples]
+Again, this workshop is intended to be a preliminary primer on the conversant space.  The content is organized around initial key learning objectives:
 
-### Documentation
+- Objective 1: Controller.  Here we delineate between your bot and the channels in which you engage.  A line that is frequently blurred.
+- Objective 2: AI.  Define what outcomes you are trying to achieve for your users.  Define intents.
+- Objective 3: NLP.  Art meets science.  Craft utterances that help guide users.
+- Objective 4: Analytics.  See what is happening where and why for who.
 
-Range of great books and resources. Following is a list of items that should be done in preparation for the in class exercise.
+### Setup
 
-- <https://developer.amazon.com/>
-- <http://www.w3schools.com/js/default.asp>
-- <http://flight-manual.atom.io/getting-started/sections/installing-atom/>
-- <https://docs.npmjs.com/getting-started/installing-node>
-- <https://www.atlassian.com/git/tutorials/install-git>
+- [IDE](http://flight-manual.atom.io/getting-started/sections/installing-atom/) of your choosing (we use atom... mostly)
+- [Node & NPM](https://docs.npmjs.com/getting-started/installing-node)
 
-## Contributing
+### Contributing
 
 Contributions welcome!
-
-See
 
 <contributing.md>.</contributing.md>
 
 ## License
 
 MIT
-
-See
-
-<license>.</license>
-
-[alexa step by step]: http://shop.oreilly.com/product/9781939902443.do
-[alexahackathon]: http://alexa-hackathon.s3-website-us-east-1.amazonaws.com/
-[cloud-slack-bot-codelab]: https://codelabs.developers.google.com/codelabs/cloud-slack-bot/
-[codelabs]: https://g.co/codelabs
-[nodejs-samples]: https://github.com/GoogleCloudPlatform/nodejs-docs-samples
-[slack-samples]: https://github.com/GoogleCloudPlatform/slack-samples
-[travis-status]: https://travis-ci.org/googlecodelabs/cloud-slack-bot
-[travis-status-image]: https://travis-ci.org/googlecodelabs/cloud-slack-bot.svg?branch=master
