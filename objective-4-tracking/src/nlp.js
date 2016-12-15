@@ -1,3 +1,5 @@
+import getUtterances from 'alexa-utterances';
+
 const HOROSCOPE = {
   intents: {
     START: ['LaunchRequest', 'AMAZON.StartOverIntent'],
@@ -6,10 +8,14 @@ const HOROSCOPE = {
     HOROSCOPE: ['GetHoroscope']
   },
   utterances: [
-    'get {a|the|} horoscope for {-|SIGN}',
+    'get {a|the} horoscope for {-|SIGN}',
     'get {-|SIGN} horoscope for {-|PERIOD}',
-    '{get| what is} {the|this|} {-|PERIOD} horoscope for {-|SIGN}',
+    '{get|what is} {the|this} {-|PERIOD} horoscope for {-|SIGN}',
   ],
+  slots: {
+    SIGN: 'SIGN',
+    PERIOD: 'PERIOD',
+  },
   slotTypes: {
     SIGN: [
       'aries', 'taurus', 'gemini', 'cancer', 'leo', 'virgo',
@@ -26,4 +32,15 @@ const HOROSCOPE = {
   }
 };
 
+const { utterances, slots, slotTypes } = HOROSCOPE;
+console.log('UTTERANCES:\n\n');
+console.log(
+  utterances
+    .map((utterance) => (
+      getUtterances(utterance, slots, slotTypes).map((s) => `GetHoroscope       ${s}`)
+    ))
+    .reduce((m, o) => [...m, ...o], [])
+    .join('\n')
+);
+console.log('\n\nEND OF UTTERANCES');
 export default HOROSCOPE;
