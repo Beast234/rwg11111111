@@ -11,3 +11,30 @@ Also, you will need to update the relevant keys in the .env file.  The UTU_SECRE
 The SUBDOMAIN is something of your choosing.  Try to make it unique, as it can conflict w/ other free public users.
 
 After these steps you can start the bot by running "npm run start" from the "objective-4-tracking" subdirectory.
+
+## Intent
+```
+{
+  "intents": [
+    {
+      "intent": "GetHoroscope",
+      "slots": [
+        {
+          "name": "sign",
+          "type": "SIGNS"
+        },
+        {
+          "name": "period",
+          "type": "PERIOD"
+        }
+      ]
+    },
+	{
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    }
+  ]
+}
+```
